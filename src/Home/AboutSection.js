@@ -6,33 +6,34 @@ import About1 from "../assets/img/about/about1.png";
 import About13 from "../assets/img/about/about13.jpg";
 import About14 from "../assets/img/about/about14.jpg";
 import About15 from "../assets/img/about/about15.jpg";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
-    <section class="about-wrap-4 motion-effects-wrap">
-      <div class="motion-effects8">
+    <section className="about-wrap-4 motion-effects-wrap">
+      <div className="motion-effects8">
         <img src={Shape26} alt="shape" width="134" height="137" />
       </div>
-      <div class="motion-effects9">
+      <div className="motion-effects9">
         <img src={Shape27} alt="shape" width="105" height="103" />
       </div>
-      <div class="motion-effects10">
+      <div className="motion-effects10">
         <img src={Shape28} alt="shape" width="90" height="18" />
       </div>
-      <div class="motion-effects11">
+      <div className="motion-effects11">
         <img src={Shape29} alt="shape" width="460" height="460" />
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="about-box6 wow fadeInUp" data-wow-delay=".2s">
-              <div class="item-heading-left">
-                <span class="section-subtitle">Who We Are</span>
-                <h2 class="section-title">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-5">
+            <div className="about-box6 wow fadeInUp" data-wow-delay=".2s">
+              <div className="item-heading-left">
+                <span className="section-subtitle">Who We Are</span>
+                <h2 className="section-title">
                   We Provide You The Best Service Of Real Estate Industries
                 </h2>
-                <div class="bg-title-wrap" style={{ display: "block" }}>
-                  <span class="background-title solid">About Us</span>
+                <div className="bg-title-wrap" style={{ display: "block" }}>
+                  <span className="background-title solid">About Us</span>
                 </div>
               </div>
               <p>
@@ -46,23 +47,23 @@ const AboutSection = () => {
                 centuriesalwith the release of Letraset sheets containing Lorem
                 Ipsum passages, and more recently.
               </p>
-              <div class="about-button">
-                <a href="contact.html" class="item-btn">
+              <div className="about-button">
+                <Link to={'/contact'} className="item-btn">
                   Contact With Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>
-          <div class="offset-lg-1 col-lg-6">
-            <div class="about-box7">
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="item-img">
+          <div className="offset-lg-1 col-lg-6">
+            <div className="about-box7">
+              <div className="row">
+                <div className="col-lg-12">
+                  <div className="item-img">
                     <img src={About13} alt="about" height="270" width="530" />
                   </div>
-                  <div class="row justify-content-end">
-                    <div class="col-xl-8">
-                      <div class="about-img-style-3">
+                  <div className="row justify-content-end">
+                    <div className="col-xl-8">
+                      <div className="about-img-style-3">
                         <img
                           src={About14}
                           alt="about"
@@ -71,8 +72,8 @@ const AboutSection = () => {
                         />
                       </div>
                     </div>
-                    <div class="col-xl-4">
-                      <div class="about-img-style-4">
+                    <div className="col-xl-4">
+                      <div className="about-img-style-4">
                         <img
                           src={About15}
                           alt="about"
@@ -84,8 +85,8 @@ const AboutSection = () => {
                   </div>
                 </div>
               </div>
-              <div class="about-img-style-5">
-                <div class="item-big-img">
+              <div className="about-img-style-5">
+                <div className="item-big-img">
                   <img src={About1} alt="about" width="425" height="654" />
                 </div>
               </div>

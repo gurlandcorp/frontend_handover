@@ -30,24 +30,24 @@ const LatestListing = () => {
 	}, []);
 
 	return (
-		<section class="property-wrap-6">
-			<div class="container">
-				<div class="item-heading-center mb-20">
-					<span class="section-subtitle">Latest Listings</span>
-					<h2 class="section-title">Featured Property For Sale</h2>
-					<div class="bg-title-wrap" style={{ display: "block" }}>
-						<span class="background-title solid">Properties</span>
+		<section className="property-wrap-6">
+			<div className="container">
+				<div className="item-heading-center mb-20">
+					<span className="section-subtitle">Latest Listings</span>
+					<h2 className="section-title">Featured Property For Sale</h2>
+					<div className="bg-title-wrap" style={{ display: "block" }}>
+						<span className="background-title solid">Properties</span>
 					</div>
 				</div>
-				<div class="row">
+				<div className="row">
 					{data.slice(0, 4).map((a) => {
 						return (
-							<div class="col-xl-6">
+							<div className="col-xl-6">
 								<div
-									class="property-box2 property-box5 wow animated fadeInUp"
+									className="property-box2 property-box5 wow animated fadeInUp"
 									data-wow-delay=".6s"
 								>
-									<div class="item-img">
+									<div className="item-img">
 										<a
 											onClick={() => {
 												history("/detailpage", { state: { propertyId: a } });
@@ -59,7 +59,7 @@ const LatestListing = () => {
 												style={{ width: "220px", height: "170px" }}
 											/>
 										</a>
-										<div class="react-icon">
+										<div className="react-icon">
 											<ul>
 												<li>
 													<a
@@ -68,7 +68,7 @@ const LatestListing = () => {
 														data-bs-placement="top"
 														title="Favourites"
 													>
-														<i class="flaticon-heart"></i>
+														<i className="flaticon-heart"></i>
 													</a>
 												</li>
 												<li>
@@ -78,39 +78,39 @@ const LatestListing = () => {
 														data-bs-placement="top"
 														title="Compare"
 													>
-														<i class="flaticon-left-and-right-arrows"></i>
+														<i className="flaticon-left-and-right-arrows"></i>
 													</a>
 												</li>
 											</ul>
 										</div>
 									</div>
-									<div class="item-content item-content-property">
-										<div class="verified-area">
-											<h3 class="item-title">
+									<div className="item-content item-content-property">
+										<div className="verified-area">
+											<h3 className="item-title">
 												<a>{a.propertyTitle}</a>
 											</h3>
 										</div>
-										<div class="location-area">
-											<i class="flaticon-maps-and-flags"></i>
+										<div className="location-area">
+											<i className="flaticon-maps-and-flags"></i>
 											{a.location.city}
 											{/* Downey, California */}
 										</div>
-										<div class="item-categoery5">
+										<div className="item-categoery5">
 											<ul>
 												<li>
-													<i class="flaticon-bed"></i>Beds: {a.bedrooms}
+													<i className="flaticon-bed"></i>Beds: {a.bedrooms}
 												</li>
 												<li>
-													<i class="flaticon-shower"></i>Baths: {a.bathrooms}
+													<i className="flaticon-shower"></i>Baths: {a.bathrooms}
 												</li>
 												<li>
-													<i class="flaticon-two-overlapping-square"></i>
+													<i className="flaticon-two-overlapping-square"></i>
 													{a.area}
 													Sqft
 												</li>
 											</ul>
 										</div>
-										<div class="item-price">
+										<div className="item-price">
 											AED {a.priceDemand}
 											{/* <i>/</i>
 											<span>mo</span> */}
@@ -120,16 +120,16 @@ const LatestListing = () => {
 							</div>
 						);
 					})}
-					{/* <div class="col-xl-6">
+					{/* <div className="col-xl-6">
             <div
-              class="property-box2 property-box5 wow animated fadeInUp"
+              className="property-box2 property-box5 wow animated fadeInUp"
               data-wow-delay=".6s"
             >
-              <div class="item-img">
+              <div className="item-img">
                 <a href="single-listing1.html">
                   <img src={Blog30} alt="blog" width="220" height="170" />
                 </a>
-                <div class="react-icon">
+                <div className="react-icon">
                   <ul>
                     <li>
                       <a
@@ -138,7 +138,7 @@ const LatestListing = () => {
                         data-bs-placement="top"
                         title="Favourites"
                       >
-                        <i class="flaticon-heart"></i>
+                        <i className="flaticon-heart"></i>
                       </a>
                     </li>
                     <li>
@@ -148,51 +148,51 @@ const LatestListing = () => {
                         data-bs-placement="top"
                         title="Compare"
                       >
-                        <i class="flaticon-left-and-right-arrows"></i>
+                        <i className="flaticon-left-and-right-arrows"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="item-content item-content-property">
-                <div class="verified-area">
-                  <h3 class="item-title">
+              <div className="item-content item-content-property">
+                <div className="verified-area">
+                  <h3 className="item-title">
                     <a href="single-listing1.html">Northwest Office Space</a>
                   </h3>
                 </div>
-                <div class="location-area">
-                  <i class="flaticon-maps-and-flags"></i>Downey, California
+                <div className="location-area">
+                  <i className="flaticon-maps-and-flags"></i>Downey, California
                 </div>
-                <div class="item-categoery5">
+                <div className="item-categoery5">
                   <ul>
                     <li>
-                      <i class="flaticon-bed"></i>Beds: 03
+                      <i className="flaticon-bed"></i>Beds: 03
                     </li>
                     <li>
-                      <i class="flaticon-shower"></i>Baths: 02
+                      <i className="flaticon-shower"></i>Baths: 02
                     </li>
                     <li>
-                      <i class="flaticon-two-overlapping-square"></i>931 Sqft
+                      <i className="flaticon-two-overlapping-square"></i>931 Sqft
                     </li>
                   </ul>
                 </div>
-                <div class="item-price">
+                <div className="item-price">
                   $35,000<i>/</i>
                   <span>yr</span>
                 </div>
               </div>
             </div>
           </div> */}
-					{/* <div class="col-xl-6">
+					{/* <div className="col-xl-6">
             <div
-              class="property-box2 property-box5 wow animated fadeInUp"
+              className="property-box2 property-box5 wow animated fadeInUp"
               data-wow-delay=".6s"
             >
-              <div class="item-img">
+              <div className="item-img">
                 <a href="single-listing1.html">
                   <img src={Blog31} alt="blog" width="220" height="170" />
                 </a>
-                <div class="react-icon">
+                <div className="react-icon">
                   <ul>
                     <li>
                       <a
@@ -201,7 +201,7 @@ const LatestListing = () => {
                         data-bs-placement="top"
                         title="Favourites"
                       >
-                        <i class="flaticon-heart"></i>
+                        <i className="flaticon-heart"></i>
                       </a>
                     </li>
                     <li>
@@ -211,50 +211,50 @@ const LatestListing = () => {
                         data-bs-placement="top"
                         title="Compare"
                       >
-                        <i class="flaticon-left-and-right-arrows"></i>
+                        <i className="flaticon-left-and-right-arrows"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="item-content item-content-property">
-                <div class="verified-area">
-                  <h3 class="item-title">
+              <div className="item-content item-content-property">
+                <div className="verified-area">
+                  <h3 className="item-title">
                     <a href="single-listing1.html">
                       Brand New Shopping Mall Sale
                     </a>
                   </h3>
                 </div>
-                <div class="location-area">
-                  <i class="flaticon-maps-and-flags"></i>Downey, California
+                <div className="location-area">
+                  <i className="flaticon-maps-and-flags"></i>Downey, California
                 </div>
-                <div class="item-categoery5">
+                <div className="item-categoery5">
                   <ul>
                     <li>
-                      <i class="flaticon-bed"></i>Beds: 03
+                      <i className="flaticon-bed"></i>Beds: 03
                     </li>
                     <li>
-                      <i class="flaticon-shower"></i>Baths: 02
+                      <i className="flaticon-shower"></i>Baths: 02
                     </li>
                     <li>
-                      <i class="flaticon-two-overlapping-square"></i>931 Sqft
+                      <i className="flaticon-two-overlapping-square"></i>931 Sqft
                     </li>
                   </ul>
                 </div>
-                <div class="item-price">$12,000</div>
+                <div className="item-price">$12,000</div>
               </div>
             </div>
           </div>
-          <div class="col-xl-6">
+          <div className="col-xl-6">
             <div
-              class="property-box2 property-box5 wow animated fadeInUp"
+              className="property-box2 property-box5 wow animated fadeInUp"
               data-wow-delay=".6s"
             >
-              <div class="item-img">
+              <div className="item-img">
                 <a href="single-listing1.html">
                   <img src={Blog32} alt="blog" width="220" height="170" />
                 </a>
-                <div class="react-icon">
+                <div className="react-icon">
                   <ul>
                     <li>
                       <a
@@ -263,7 +263,7 @@ const LatestListing = () => {
                         data-bs-placement="top"
                         title="Favourites"
                       >
-                        <i class="flaticon-heart"></i>
+                        <i className="flaticon-heart"></i>
                       </a>
                     </li>
                     <li>
@@ -273,53 +273,53 @@ const LatestListing = () => {
                         data-bs-placement="top"
                         title="Compare"
                       >
-                        <i class="flaticon-left-and-right-arrows"></i>
+                        <i className="flaticon-left-and-right-arrows"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="item-content item-content-property">
-                <div class="verified-area">
-                  <h3 class="item-title">
+              <div className="item-content item-content-property">
+                <div className="verified-area">
+                  <h3 className="item-title">
                     <a href="single-listing1.html">
                       Affordable Green Villa House
                     </a>
                   </h3>
                 </div>
-                <div class="location-area">
-                  <i class="flaticon-maps-and-flags"></i>Downey, California
+                <div className="location-area">
+                  <i className="flaticon-maps-and-flags"></i>Downey, California
                 </div>
-                <div class="item-categoery5">
+                <div className="item-categoery5">
                   <ul>
                     <li>
-                      <i class="flaticon-bed"></i>Beds: 03
+                      <i className="flaticon-bed"></i>Beds: 03
                     </li>
                     <li>
-                      <i class="flaticon-shower"></i>Baths: 02
+                      <i className="flaticon-shower"></i>Baths: 02
                     </li>
                     <li>
-                      <i class="flaticon-two-overlapping-square"></i>931 Sqft
+                      <i className="flaticon-two-overlapping-square"></i>931 Sqft
                     </li>
                   </ul>
                 </div>
-                <div class="item-price">
+                <div className="item-price">
                   $17,000<i>/</i>
                   <span>mo</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-6">
+          <div className="col-xl-6">
             <div
-              class="property-box2 property-box5 wow animated fadeInUp"
+              className="property-box2 property-box5 wow animated fadeInUp"
               data-wow-delay=".6s"
             >
-              <div class="item-img">
+              <div className="item-img">
                 <a href="single-listing1.html">
                   <img src={Blog33} alt="blog" width="220" height="170" />
                 </a>
-                <div class="react-icon">
+                <div className="react-icon">
                   <ul>
                     <li>
                       <a
@@ -328,7 +328,7 @@ const LatestListing = () => {
                         data-bs-placement="top"
                         title="Favourites"
                       >
-                        <i class="flaticon-heart"></i>
+                        <i className="flaticon-heart"></i>
                       </a>
                     </li>
                     <li>
@@ -338,53 +338,53 @@ const LatestListing = () => {
                         data-bs-placement="top"
                         title="Compare"
                       >
-                        <i class="flaticon-left-and-right-arrows"></i>
+                        <i className="flaticon-left-and-right-arrows"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="item-content item-content-property">
-                <div class="verified-area">
-                  <h3 class="item-title">
+              <div className="item-content item-content-property">
+                <div className="verified-area">
+                  <h3 className="item-title">
                     <a href="single-listing1.html">
                       Countryside Modern Lake View
                     </a>
                   </h3>
                 </div>
-                <div class="location-area">
-                  <i class="flaticon-maps-and-flags"></i>Downey, California
+                <div className="location-area">
+                  <i className="flaticon-maps-and-flags"></i>Downey, California
                 </div>
-                <div class="item-categoery5">
+                <div className="item-categoery5">
                   <ul>
                     <li>
-                      <i class="flaticon-bed"></i>Beds: 03
+                      <i className="flaticon-bed"></i>Beds: 03
                     </li>
                     <li>
-                      <i class="flaticon-shower"></i>Baths: 02
+                      <i className="flaticon-shower"></i>Baths: 02
                     </li>
                     <li>
-                      <i class="flaticon-two-overlapping-square"></i>931 Sqft
+                      <i className="flaticon-two-overlapping-square"></i>931 Sqft
                     </li>
                   </ul>
                 </div>
-                <div class="item-price">
+                <div className="item-price">
                   $40,000<i>/</i>
                   <span>yr</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-xl-6">
+          <div className="col-xl-6">
             <div
-              class="property-box2 property-box5 wow animated fadeInUp"
+              className="property-box2 property-box5 wow animated fadeInUp"
               data-wow-delay=".6s"
             >
-              <div class="item-img">
+              <div className="item-img">
                 <a href="single-listing1.html">
                   <img src={Blog34} alt="blog" width="220" height="170" />
                 </a>
-                <div class="react-icon">
+                <div className="react-icon">
                   <ul>
                     <li>
                       <a
@@ -393,7 +393,7 @@ const LatestListing = () => {
                         data-bs-placement="top"
                         title="Favourites"
                       >
-                        <i class="flaticon-heart"></i>
+                        <i className="flaticon-heart"></i>
                       </a>
                     </li>
                     <li>
@@ -403,41 +403,41 @@ const LatestListing = () => {
                         data-bs-placement="top"
                         title="Compare"
                       >
-                        <i class="flaticon-left-and-right-arrows"></i>
+                        <i className="flaticon-left-and-right-arrows"></i>
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="item-content item-content-property">
-                <div class="verified-area">
-                  <h3 class="item-title">
+              <div className="item-content item-content-property">
+                <div className="verified-area">
+                  <h3 className="item-title">
                     <a href="single-listing1.html">Sky Pool Villa House</a>
                   </h3>
                 </div>
-                <div class="location-area">
-                  <i class="flaticon-maps-and-flags"></i>Downey, California
+                <div className="location-area">
+                  <i className="flaticon-maps-and-flags"></i>Downey, California
                 </div>
-                <div class="item-categoery5">
+                <div className="item-categoery5">
                   <ul>
                     <li>
-                      <i class="flaticon-bed"></i>Beds: 03
+                      <i className="flaticon-bed"></i>Beds: 03
                     </li>
                     <li>
-                      <i class="flaticon-shower"></i>Baths: 02
+                      <i className="flaticon-shower"></i>Baths: 02
                     </li>
                     <li>
-                      <i class="flaticon-two-overlapping-square"></i>931 Sqft
+                      <i className="flaticon-two-overlapping-square"></i>931 Sqft
                     </li>
                   </ul>
                 </div>
-                <div class="item-price">$8,000</div>
+                <div className="item-price">$8,000</div>
               </div>
             </div>
           </div> */}
 				</div>
-				<div class="property-button">
-					<a onClick={() => (window.location = "/allListing")} class="item-btn">
+				<div className="property-button">
+					<a onClick={() => (window.location = "/allListing")} className="item-btn">
 						View All Properties
 					</a>
 				</div>

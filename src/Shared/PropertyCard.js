@@ -14,9 +14,9 @@ import { useNavigate } from "react-router-dom";
 const PropertyCard = (props) => {
 	const history = useNavigate();
 	return (
-		<div class="col-lg-6 col-md-6">
-			<div class="property-box2 wow animated fadeInUp" data-wow-delay=".3s">
-				<div class="item-img">
+		<div className="col-lg-6 col-md-6">
+			<div className="property-box2 wow animated fadeInUp" data-wow-delay=".3s">
+				<div className="item-img">
 					<a
 						onClick={() => {
 							localStorage.setItem("propertyId", props?.data._id);
@@ -30,18 +30,18 @@ const PropertyCard = (props) => {
 							style={{ width: "510px", height: "340px" }}
 						/>
 					</a>
-					<div class="item-category-box1">
-						<div class="item-category">For Rent</div>
+					<div className="item-category-box1">
+						<div className="item-category">For Rent</div>
 					</div>
-					<div class="rent-price">
-						<div class="item-price">
+					<div className="rent-price">
+						<div className="item-price">
 							AED {props.data.priceDemand}
 							{/* <span>
 								<i>/</i>mo
 							</span> */}
 						</div>
 					</div>
-					<div class="react-icon">
+					<div className="react-icon">
 						<ul>
 							<li>
 								<a
@@ -50,7 +50,7 @@ const PropertyCard = (props) => {
 									data-bs-placement="top"
 									title="Favourites"
 								>
-									<i class="flaticon-heart"></i>
+									<i className="flaticon-heart"></i>
 								</a>
 							</li>
 							<li>
@@ -60,13 +60,13 @@ const PropertyCard = (props) => {
 									data-bs-placement="top"
 									title="Compare"
 								>
-									<i class="flaticon-left-and-right-arrows"></i>
+									<i className="flaticon-left-and-right-arrows"></i>
 								</a>
 							</li>
 						</ul>
 					</div>
 				</div>
-				<div class="item-category10">
+				<div className="item-category10">
 					<a
 
 					//  href="single-listing1.html"
@@ -74,9 +74,9 @@ const PropertyCard = (props) => {
 						Appartment
 					</a>
 				</div>
-				<div class="item-content">
-					<div class="verified-area">
-						<h3 class="item-title">
+				<div className="item-content">
+					<div className="verified-area">
+						<h3 className="item-title">
 							<a
 							// href="single-listing1.html"
 							>
@@ -84,21 +84,21 @@ const PropertyCard = (props) => {
 							</a>
 						</h3>
 					</div>
-					<div class="location-area">
-						<i class="flaticon-maps-and-flags"></i>
+					<div className="location-area">
+						<i className="flaticon-maps-and-flags"></i>
 						{/* Downey, California */}
 						{props.data.location.city}
 					</div>
-					<div class="item-categoery3">
+					<div className="item-categoery3">
 						<ul>
 							<li>
-								<i class="flaticon-bed"></i>Beds: {props.data.bedrooms}
+								<i className="flaticon-bed"></i>Beds: {props.data.bedrooms}
 							</li>
 							<li>
-								<i class="flaticon-shower"></i>Baths: {props.data.bathrooms}
+								<i className="flaticon-shower"></i>Baths: {props.data.bathrooms}
 							</li>
 							<li>
-								<i class="flaticon-two-overlapping-square"></i>
+								<i className="flaticon-two-overlapping-square"></i>
 								931 Sqft
 							</li>
 						</ul>
@@ -106,24 +106,24 @@ const PropertyCard = (props) => {
 				</div>
 			</div>
 		</div>
-		// <div class="col-lg-12">
+		// <div className="col-lg-12">
 		//   <div
-		//     class="property-box2 property-box4 wow animated fadeInUp"
+		//     className="property-box2 property-box4 wow animated fadeInUp"
 		//     data-wow-delay=".6s"
 		//   >
-		//     <div class="item-img">
+		//     <div className="item-img">
 		//       <a href="single-listing1.html">
 		//         <img src={Blog18} alt="blog" width="250" height="200" />
 		//       </a>
-		//       <div class="item-category-box1">
-		//         <div class="item-category">For Rent</div>
+		//       <div className="item-category-box1">
+		//         <div className="item-category">For Rent</div>
 		//       </div>
 		//     </div>
-		//     <div class="item-content item-content-property">
-		//       <div class="item-category10">
+		//     <div className="item-content item-content-property">
+		//       <div className="item-category10">
 		//         <a href="single-listing1.html">Appartment</a>
 		//       </div>
-		//       <div class="react-icon react-icon-2">
+		//       <div className="react-icon react-icon-2">
 		//         <ul>
 		//           <li>
 		//             <a
@@ -132,7 +132,7 @@ const PropertyCard = (props) => {
 		//               data-bs-placement="bottom"
 		//               title="Favourites"
 		//             >
-		//               <i class="flaticon-heart"></i>
+		//               <i className="flaticon-heart"></i>
 		//             </a>
 		//           </li>
 		//           <li>
@@ -142,29 +142,29 @@ const PropertyCard = (props) => {
 		//               data-bs-placement="bottom"
 		//               title="Compare"
 		//             >
-		//               <i class="flaticon-left-and-right-arrows"></i>
+		//               <i className="flaticon-left-and-right-arrows"></i>
 		//             </a>
 		//           </li>
 		//         </ul>
 		//       </div>
-		//       <div class="verified-area">
-		//         <h3 class="item-title">
+		//       <div className="verified-area">
+		//         <h3 className="item-title">
 		//           <a href="single-listing1.html">Family House For Rent</a>
 		//         </h3>
 		//       </div>
-		//       <div class="location-area">
-		//         <i class="flaticon-maps-and-flags"></i>Downey, California
+		//       <div className="location-area">
+		//         <i className="flaticon-maps-and-flags"></i>Downey, California
 		//       </div>
-		//       <div class="item-categoery3">
+		//       <div className="item-categoery3">
 		//         <ul>
 		//           <li>
-		//             <i class="flaticon-bed"></i>Beds: 03
+		//             <i className="flaticon-bed"></i>Beds: 03
 		//           </li>
 		//           <li>
-		//             <i class="flaticon-shower"></i>Baths: 02
+		//             <i className="flaticon-shower"></i>Baths: 02
 		//           </li>
 		//           <li>
-		//             <i class="flaticon-two-overlapping-square"></i>
+		//             <i className="flaticon-two-overlapping-square"></i>
 		//             931 Sqft
 		//           </li>
 		//         </ul>

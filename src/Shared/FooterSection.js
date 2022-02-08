@@ -6,26 +6,25 @@ import Insta5 from "../assets/img/instagram/insta05.jpg";
 import Insta6 from "../assets/img/instagram/insta06.jpg";
 import LogoLight from "../assets/img/logo_light.svg";
 import Logo from "../logohandover.png";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const FooterSection = () => {
-	const history = useNavigate();
 	return (
 		<>
-			<footer class="footer-area">
-				<div class="footer-top footer-top-style">
-					<div class="container">
-						<div class="row justify-content-between">
-							<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
-								<div class="footer-logo-area footer-logo-area-2">
-									<div class="item-logo">
+			<footer className="footer-area">
+				<div className="footer-top footer-top-style">
+					<div className="container">
+						<div className="row justify-content-between">
+							<div className="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+								<div className="footer-logo-area footer-logo-area-2">
+									<div className="item-logo">
 										<img
 											src={Logo}
 											style={{ width: "157px", height: "40px" }}
 											//  width="157"
 											//   height="40"
 											//   alt="logo"
-											class="img-fluid"
+											className="img-fluid"
 										/>
 									</div>
 									<p>
@@ -33,46 +32,46 @@ const FooterSection = () => {
 										do eiusmod tempor inci didunt ut labore et dolor.pisicing
 										elit, sed do eiusmod tempor inci
 									</p>
-									<div class="item-social">
+									<div className="item-social">
 										<ul>
 											<li>
 												<a href="https://www.facebook.com/" target="_blank">
-													<i class="fab fa-facebook-f"></i>
+													<i className="fab fa-facebook-f"></i>
 												</a>
 											</li>
 											<li>
 												<a href="https://twitter.com/" target="_blank">
-													<i class="fab fa-twitter"></i>
+													<i className="fab fa-twitter"></i>
 												</a>
 											</li>
 											<li>
 												<a href="https://vimeo.com/" target="_blank">
-													<i class="fab fa-vimeo-v"></i>
+													<i className="fab fa-vimeo-v"></i>
 												</a>
 											</li>
 											<li>
 												<a href="https://www.pinterest.com/" target="_blank">
-													<i class="fab fa-pinterest-p"></i>
+													<i className="fab fa-pinterest-p"></i>
 												</a>
 											</li>
 											<li>
 												<a href="https://web.whatsapp.com/" target="_blank">
-													<i class="fab fa-whatsapp"></i>
+													<i className="fab fa-whatsapp"></i>
 												</a>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
-								<div class="footer-link footer-link-style-2">
-									<div class="footer-title footer-title-style2">
+							<div className="col-xl-2 col-lg-2 col-md-6 col-sm-6">
+								<div className="footer-link footer-link-style-2">
+									<div className="footer-title footer-title-style2">
 										<h3>Quick Links</h3>
 									</div>
-									<div class="item-link">
+									<div className="item-link">
 										<ul>
 											<li>
-												<a onClick={() => history("/about")}>About Us </a>
+												<Link to="/about">About Us</Link>
 											</li>
 											<li>
 												<a>Blogs & Articles </a>
@@ -84,24 +83,24 @@ const FooterSection = () => {
 												<a>Privacy Policy </a>
 											</li>
 											<li>
-												<a onClick={() => history("/contact")}>Contact Us </a>
+												<Link to="/contact">Contact Us</Link>
 											</li>
 										</ul>
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-								<div class="footer-insta">
-									<div class="footer-title footer-title-style2">
+							<div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+								<div className="footer-insta">
+									<div className="footer-title footer-title-style2">
 										<h3>Instagram</h3>
 									</div>
-									<div class="insta-link">
+									<div className="insta-link">
 										<ul>
 											<li>
-												<div class="item-img">
+												<div className="item-img">
 													<a
 														href="https://www.instagram.com/"
-														class="insta-pic"
+														className="insta-pic"
 													>
 														<img
 															src={Insta1}
@@ -110,21 +109,21 @@ const FooterSection = () => {
 															alt="instagram"
 														/>
 													</a>
-													<div class="item-overlay">
+													<div className="item-overlay">
 														<a
 															href="https://www.instagram.com/"
 															target="_blank"
 														>
-															<i class="fab fa-instagram"></i>
+															<i className="fab fa-instagram"></i>
 														</a>
 													</div>
 												</div>
 											</li>
 											<li>
-												<div class="item-img">
+												<div className="item-img">
 													<a
 														href="https://www.instagram.com/"
-														class="insta-pic"
+														className="insta-pic"
 													>
 														<img
 															src={Insta2}
@@ -133,21 +132,21 @@ const FooterSection = () => {
 															alt="instagram"
 														/>
 													</a>
-													<div class="item-overlay">
+													<div className="item-overlay">
 														<a
 															href="https://www.instagram.com/"
 															target="_blank"
 														>
-															<i class="fab fa-instagram"></i>
+															<i className="fab fa-instagram"></i>
 														</a>
 													</div>
 												</div>
 											</li>
 											<li>
-												<div class="item-img">
+												<div className="item-img">
 													<a
 														href="https://www.instagram.com/"
-														class="insta-pic"
+														className="insta-pic"
 													>
 														<img
 															src={Insta3}
@@ -156,21 +155,21 @@ const FooterSection = () => {
 															alt="instagram"
 														/>
 													</a>
-													<div class="item-overlay">
+													<div className="item-overlay">
 														<a
 															href="https://www.instagram.com/"
 															target="_blank"
 														>
-															<i class="fab fa-instagram"></i>
+															<i className="fab fa-instagram"></i>
 														</a>
 													</div>
 												</div>
 											</li>
 											<li>
-												<div class="item-img">
+												<div className="item-img">
 													<a
 														href="https://www.instagram.com/"
-														class="insta-pic"
+														className="insta-pic"
 													>
 														<img
 															src={Insta4}
@@ -179,21 +178,21 @@ const FooterSection = () => {
 															alt="instagram"
 														/>
 													</a>
-													<div class="item-overlay">
+													<div className="item-overlay">
 														<a
 															href="https://www.instagram.com/"
 															target="_blank"
 														>
-															<i class="fab fa-instagram"></i>
+															<i className="fab fa-instagram"></i>
 														</a>
 													</div>
 												</div>
 											</li>
 											<li>
-												<div class="item-img">
+												<div className="item-img">
 													<a
 														href="https://www.instagram.com/"
-														class="insta-pic"
+														className="insta-pic"
 													>
 														<img
 															src={Insta5}
@@ -202,21 +201,21 @@ const FooterSection = () => {
 															alt="instagram"
 														/>
 													</a>
-													<div class="item-overlay">
+													<div className="item-overlay">
 														<a
 															href="https://www.instagram.com/"
 															target="_blank"
 														>
-															<i class="fab fa-instagram"></i>
+															<i className="fab fa-instagram"></i>
 														</a>
 													</div>
 												</div>
 											</li>
 											<li>
-												<div class="item-img">
+												<div className="item-img">
 													<a
 														href="https://www.instagram.com/"
-														class="insta-pic"
+														className="insta-pic"
 													>
 														<img
 															src={Insta6}
@@ -225,12 +224,12 @@ const FooterSection = () => {
 															alt="instagram"
 														/>
 													</a>
-													<div class="item-overlay">
+													<div className="item-overlay">
 														<a
 															href="https://www.instagram.com/"
 															target="_blank"
 														>
-															<i class="fab fa-instagram"></i>
+															<i className="fab fa-instagram"></i>
 														</a>
 													</div>
 												</div>
@@ -239,25 +238,25 @@ const FooterSection = () => {
 									</div>
 								</div>
 							</div>
-							<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-								<div class="footer-contact footer-contact-style-2">
-									<div class="footer-title footer-title-style2">
+							<div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+								<div className="footer-contact footer-contact-style-2">
+									<div className="footer-title footer-title-style2">
 										<h3>Contact</h3>
 									</div>
-									<div class="footer-location">
+									<div className="footer-location">
 										<ul>
-											<li class="item-map">
-												<i class="fas fa-map-marker-alt"></i>121 King St,
+											<li className="item-map">
+												<i className="fas fa-map-marker-alt"></i>121 King St,
 												Melbourne den 3000, Australia
 											</li>
 											<li>
 												<a href="mailto:info@example.com">
-													<i class="fas fa-envelope"></i>info@example.com
+													<i className="fas fa-envelope"></i>info@example.com
 												</a>
 											</li>
 											<li>
 												<a href="tel:+123596000">
-													<i class="fas fa-phone-alt"></i>(+123) 596 000
+													<i className="fas fa-phone-alt"></i>(+123) 596 000
 												</a>
 											</li>
 										</ul>
@@ -267,11 +266,11 @@ const FooterSection = () => {
 						</div>
 					</div>
 				</div>
-				<div class="footer-bottom footer-bottom-style-2">
-					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-lg-6 col-md-6">
-								<div class="copyright-area1">
+				<div className="footer-bottom footer-bottom-style-2">
+					<div className="container">
+						<div className="row justify-content-center">
+							<div className="col-lg-6 col-md-6">
+								<div className="copyright-area1">
 									<ul>
 										<li>
 											<a href="about-1.html">Terms of Use</a>
@@ -282,8 +281,8 @@ const FooterSection = () => {
 									</ul>
 								</div>
 							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="copyright-area2">
+							<div className="col-lg-6 col-md-6">
+								<div className="copyright-area2">
 									<p>2022© All rightre served by RadiusTheme</p>
 								</div>
 							</div>
@@ -291,8 +290,8 @@ const FooterSection = () => {
 					</div>
 				</div>
 			</footer>
-			<a href="javascript:void(0)" id="back-to-top">
-				<i class="fas fa-angle-double-up"></i>
+			<a id="back-to-top">
+				<i className="fas fa-angle-double-up"></i>
 			</a>
 		</>
 	);

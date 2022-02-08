@@ -16,15 +16,15 @@ const BrandSection = () => {
 		Shape13,
 	]);
 	return (
-		// <div class="brand-wrap1 brand-wrap3">
-		// 	<div class="container">
-		// 		<div class="brand-layout swiper-container">
-		// 			<div class="swiper-wrapper">
+		// <div className="brand-wrap1 brand-wrap3">
+		// 	<div className="container">
+		// 		<div className="brand-layout swiper-container">
+		// 			<div className="swiper-wrapper">
 		// 				{Shape11mages.map((i) => {
 		// 					return (
-		// 						<div class="swiper-slide">
-		// 							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-		// 								<div class="item-img">
+		// 						<div className="swiper-slide">
+		// 							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+		// 								<div className="item-img">
 		// 									<a href="index.html">
 		// 										<img
 		// 											src={Shape11}
@@ -42,13 +42,13 @@ const BrandSection = () => {
 		// 	</div>
 		// </div>
 
-		<div class="brand-wrap1 brand-wrap3">
-			<div class="container">
-				<div class="brand-layout swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+		<div className="brand-wrap1 brand-wrap3">
+			<div className="container">
+				<div className="brand-layout swiper-container">
+					<div className="swiper-wrapper">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -60,9 +60,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -74,9 +74,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -88,9 +88,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -102,9 +102,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -116,9 +116,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -130,9 +130,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -144,9 +144,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -158,9 +158,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -172,9 +172,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -186,9 +186,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -200,9 +200,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -214,9 +214,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -228,9 +228,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img
@@ -242,9 +242,9 @@ const BrandSection = () => {
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="brand-box2 wow fadeInUp" data-wow-delay=".4s">
-								<div class="item-img">
+						<div className="swiper-slide">
+							<div className="brand-box2 wow fadeInUp" data-wow-delay=".4s">
+								<div className="item-img">
 									<a href="index.html">
 										{" "}
 										<img

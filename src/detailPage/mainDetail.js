@@ -11,7 +11,7 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const AboutSection = () => {
+const MainDetail = () => {
 	const history = useNavigate();
 	const location = useLocation();
 	const propertID = location.state.propertyId;
@@ -1270,4 +1270,4 @@ const AboutSection = () => {
 	);
 };
 
-export default AboutSection;
+export default MainDetail;

@@ -7,11 +7,9 @@ import PropertyBanner from "../Home/PropertyBanner";
 const DetailPage = () => {
 	return (
 		<>
-			<Header />
 			<About />
 			{/* <Brand /> */}
 			<PropertyBanner/>
-			<FooterSection />
 		</>
 	);
 };

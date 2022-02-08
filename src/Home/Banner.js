@@ -1,38 +1,45 @@
 import Banner2 from "../assets/img/banner/one.jpg";
 
 const Banner = () => {
-  return (
+    return (
     <section
-      class="main-banner-wrap1 main-banner-wrap4 parallaxie"
+      className="main-banner-wrap1 main-banner-wrap4 parallaxie"
       data-bg-image={Banner2}
       style={{ background: `url(${Banner2})` }}
     >
-      <div class="container">
-        <div class="row justify-content-end">
-          <div class="col-xl-5 col-sm-12">
-            <div class="main-banner-box4 wow slideInUp" data-wow-delay=".3s">
-              <div class="banner-style-1">
-                <div class="item-category-box1">
-                  <div class="item-category">For Rent</div>
+      <div className="container">
+        <div className="row justify-content-end">
+          <div className="col-xl-5 col-sm-12">
+            <div
+              className="main-banner-box4 wow slideInUp"
+              data-wow-delay=".3s"
+            >
+              <div className="banner-style-1">
+                <div className="item-category-box1">
+                  <div className="item-category">For Rent</div>
                 </div>
-                <div class="item-price">
+                <div className="item-price">
                   $15,000/<span>mo</span>
                 </div>
               </div>
-              <h3 class="item-title">Furnished Luxary Apartment</h3>
-              <div class="location-area">
-                <i class="flaticon-maps-and-flags"></i>Downey, California
+              <h3 className="item-title">Furnished Luxary Apartment</h3>
+              <div className="location-area">
+                <i className="flaticon-maps-and-flags" />
+                Downey, California
               </div>
-              <div class="item-categoery3 item-categoery4">
+              <div className="item-categoery3 item-categoery4">
                 <ul>
                   <li>
-                    <i class="flaticon-bed"></i>Beds: 03
+                    <i className="flaticon-bed" />
+                    Beds: 03
                   </li>
                   <li>
-                    <i class="flaticon-shower"></i>Baths: 02
+                    <i className="flaticon-shower" />
+                    Baths: 02
                   </li>
                   <li>
-                    <i class="flaticon-two-overlapping-square"></i>931 Sqft
+                    <i className="flaticon-two-overlapping-square" />
+                    931 Sqft
                   </li>
                 </ul>
               </div>
@@ -41,7 +48,7 @@ const Banner = () => {
         </div>
       </div>
     </section>
-  );
+    );
 };
 
 export default Banner;

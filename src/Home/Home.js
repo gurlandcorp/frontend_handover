@@ -15,27 +15,24 @@ import LatestListing from "./LatestListing";
 import FooterSection from "../Shared/FooterSection";
 
 const Home = () => {
-  return (
+    return (
     <>
-      <Header />
-      <Banner />
-      <BrandSection />
-      <AboutSection />
-      {/* <PropertySection /> */}
-      <LocationSection />
-      <PropertyBanner />
-      <LatestListing />
-      {/* <TestimonialSection /> */}
-      <BlogSection />
-      <JoiningBanner />
+        <Banner />
+        <BrandSection />
+        <AboutSection />
+        {/* <PropertySection /> */}
+        <LocationSection />
+        <PropertyBanner />
+        <LatestListing />
+        {/* <TestimonialSection /> */}
+        <BlogSection />
+        <JoiningBanner />
 
-      {/* <TeamSection />
-      <ActionStartSection />
-      <ProgressStartSection /> */}
-
-      <FooterSection />
+        {/* <TeamSection />
+        <ActionStartSection />
+        <ProgressStartSection /> */}
     </>
-  );
+    );
 };
 
 export default Home;

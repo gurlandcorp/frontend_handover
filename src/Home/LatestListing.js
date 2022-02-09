@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import Blog29 from "../assets/img/blog/blog29.jpg";
-import Blog30 from "../assets/img/blog/blog30.jpg";
-import Blog31 from "../assets/img/blog/blog31.jpg";
-import Blog32 from "../assets/img/blog/blog32.jpg";
-import Blog33 from "../assets/img/blog/blog33.jpg";
-import Blog34 from "../assets/img/blog/blog34.jpg";
-import api from "../services/api";
+// import Blog29 from "../assets/img/blog/blog29.jpg";
+// import Blog30 from "../assets/img/blog/blog30.jpg";
+// import Blog31 from "../assets/img/blog/blog31.jpg";
+// import Blog32 from "../assets/img/blog/blog32.jpg";
+// import Blog33 from "../assets/img/blog/blog33.jpg";
+// import Blog34 from "../assets/img/blog/blog34.jpg";
+// import api from "../services/api";
 import axios from "axios";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const LatestListing = () => {
-	const history = useNavigate();
+	// const history = useNavigate();
 	const [data, setData] = useState([]);
 	useEffect(() => {
 		axios
@@ -46,7 +46,7 @@ const LatestListing = () => {
 									data-wow-delay=".6s"
 								>
 									<div className="item-img">
-										<Link to={'/detailpage'} 
+										<Link to={'/property/'+a._id} 
                     // onClick={() => {
                     //   localStorage.setItem('propertyId',a._id)
                     //   history("/detailpage", { state: { propertyId:a } });
@@ -61,24 +61,22 @@ const LatestListing = () => {
 										<div className="react-icon">
 											<ul>
 												<li>
-													<a
-														// href="favourite.html"
+													<Link to={`/property/${a._id}`}
 														data-bs-toggle="tooltip"
 														data-bs-placement="top"
 														title="Favourites"
 													>
 														<i className="flaticon-heart"></i>
-													</a>
+													</Link>
 												</li>
 												<li>
-													<a
-														// href="compare.html"
+													<Link to={`/property/${a._id}`}
 														data-bs-toggle="tooltip"
 														data-bs-placement="top"
 														title="Compare"
 													>
 														<i className="flaticon-left-and-right-arrows"></i>
-													</a>
+													</Link>
 												</li>
 											</ul>
 										</div>
@@ -86,9 +84,7 @@ const LatestListing = () => {
 									<div className="item-content item-content-property">
 										<div className="verified-area">
 											<h3 className="item-title">
-												<a 
-                        // href="single-listing1.html"
-                        >{a.propertyTitle}</a>
+												<Link to={`/property/${a._id}`} >{a.propertyTitle}</Link>
 											</h3>
 										</div>
 										<div className="location-area">
@@ -438,9 +434,9 @@ const LatestListing = () => {
           </div> */}
 				</div>
 				<div className="property-button">
-					<a onClick={() => (window.location = "/allListing")} className="item-btn">
+					<Link to={'/allListing'} className="item-btn">
 						View All Properties
-					</a>
+					</Link>
 				</div>
 			</div>
 		</section>

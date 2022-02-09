@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Location10 from "../assets/img/toparea/location10.jpg";
 import Location11 from "../assets/img/toparea/location11.jpg";
 import Location12 from "../assets/img/toparea/location12.jpg";
@@ -21,9 +22,9 @@ const LocationSection = () => {
           </div>
           <div className="col-lg-6 col-md-5">
             <div className="heading-button">
-              <a href="single-listing1.html" className="heading-btn item-btn-2">
+              <Link to={'/properties'} className="heading-btn item-btn-2">
                 Explore More
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -33,7 +34,7 @@ const LocationSection = () => {
               <div className="col-lg-6 col-md-6 col-sm-6">
                 <div className="location-box3 wow zoomIn" data-wow-delay=".2s">
                   <div className="item-img">
-                    <a href="single-listing1.html">
+                    <a href="single-listing1">
                       <img
                         src={Location10}
                         alt="location"
@@ -47,12 +48,12 @@ const LocationSection = () => {
                       <div className="item-category">02 properties</div>
                       <div className="item-title">
                         <h3>
-                          <a href="single-listing2.html">Melbourne</a>
+                          <a href="single-listing2">Melbourne</a>
                         </h3>
                       </div>
                     </div>
                     <div className="location-button">
-                      <a href="single-listing3.html" className="location-btn">
+                      <a href="single-listing3" className="location-btn">
                         <i className="fas fa-arrow-right"></i>
                       </a>
                     </div>
@@ -62,7 +63,7 @@ const LocationSection = () => {
               <div className="col-lg-6 col-md-6 col-sm-6">
                 <div className="location-box3 wow zoomIn" data-wow-delay=".2s">
                   <div className="item-img">
-                    <a href="single-listing1.html">
+                    <a href="single-listing1">
                       <img
                         src={Location11}
                         alt="location"
@@ -76,12 +77,12 @@ const LocationSection = () => {
                       <div className="item-category">02 properties</div>
                       <div className="item-title">
                         <h3>
-                          <a href="single-listing2.html">Kansas</a>
+                          <a href="single-listing2">Kansas</a>
                         </h3>
                       </div>
                     </div>
                     <div className="location-button">
-                      <a href="single-listing3.html" className="location-btn">
+                      <a href="single-listing3" className="location-btn">
                         <i className="fas fa-arrow-right"></i>
                       </a>
                     </div>
@@ -93,7 +94,7 @@ const LocationSection = () => {
           <div className="col-lg-6 col-md-12">
             <div className="location-box3 wow zoomIn" data-wow-delay=".2s">
               <div className="item-img">
-                <a href="single-listing1.html">
+                <a href="single-listing1">
                   <img
                     src={Location12}
                     alt="location"
@@ -107,12 +108,12 @@ const LocationSection = () => {
                   <div className="item-category">02 properties</div>
                   <div className="item-title">
                     <h3>
-                      <a href="single-listing2.html">San Francisco</a>
+                      <a href="single-listing2">San Francisco</a>
                     </h3>
                   </div>
                 </div>
                 <div className="location-button">
-                  <a href="single-listing3.html" className="location-btn">
+                  <a href="single-listing3" className="location-btn">
                     <i className="fas fa-arrow-right"></i>
                   </a>
                 </div>
@@ -122,7 +123,7 @@ const LocationSection = () => {
           <div className="col-lg-6">
             <div className="location-box3 wow zoomIn" data-wow-delay=".3s">
               <div className="item-img">
-                <a href="single-listing1.html">
+                <a href="single-listing1">
                   <img
                     src={Location13}
                     alt="location"
@@ -136,12 +137,12 @@ const LocationSection = () => {
                   <div className="item-category">02 properties</div>
                   <div className="item-title">
                     <h3>
-                      <a href="single-listing2.html">Albania</a>
+                      <a href="single-listing2">Albania</a>
                     </h3>
                   </div>
                 </div>
                 <div className="location-button">
-                  <a href="single-listing3.html" className="location-btn">
+                  <a href="single-listing3" className="location-btn">
                     <i className="fas fa-arrow-right"></i>
                   </a>
                 </div>
@@ -153,7 +154,7 @@ const LocationSection = () => {
               <div className="col-lg-6 col-md-6 col-sm-6">
                 <div className="location-box3 wow zoomIn" data-wow-delay=".2s">
                   <div className="item-img">
-                    <a href="single-listing1.html">
+                    <a href="single-listing1">
                       <img
                         src={Location14}
                         alt="location"
@@ -167,12 +168,12 @@ const LocationSection = () => {
                       <div className="item-category">02 properties</div>
                       <div className="item-title">
                         <h3>
-                          <a href="single-listing2.html">New York</a>
+                          <a href="single-listing2">New York</a>
                         </h3>
                       </div>
                     </div>
                     <div className="location-button">
-                      <a href="single-listing3.html" className="location-btn">
+                      <a href="single-listing3" className="location-btn">
                         <i className="fas fa-arrow-right"></i>
                       </a>
                     </div>
@@ -182,7 +183,7 @@ const LocationSection = () => {
               <div className="col-lg-6 col-md-6 col-sm-6">
                 <div className="location-box3 wow zoomIn" data-wow-delay=".2s">
                   <div className="item-img">
-                    <a href="single-listing1.html">
+                    <a href="single-listing1">
                       <img
                         src={Location10}
                         alt="location"
@@ -196,12 +197,12 @@ const LocationSection = () => {
                       <div className="item-category">02 properties</div>
                       <div className="item-title">
                         <h3>
-                          <a href="single-listing2.html">Kansas</a>
+                          <a href="single-listing2">Kansas</a>
                         </h3>
                       </div>
                     </div>
                     <div className="location-button">
-                      <a href="single-listing3.html" className="location-btn">
+                      <a href="single-listing3" className="location-btn">
                         <i className="fas fa-arrow-right"></i>
                       </a>
                     </div>

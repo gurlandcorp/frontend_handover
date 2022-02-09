@@ -4,7 +4,7 @@ import Insta3 from "../assets/img/instagram/insta03.jpg";
 import Insta4 from "../assets/img/instagram/insta04.jpg";
 import Insta5 from "../assets/img/instagram/insta05.jpg";
 import Insta6 from "../assets/img/instagram/insta06.jpg";
-import LogoLight from "../assets/img/logo_light.svg";
+// import LogoLight from "../assets/img/logo_light.svg";
 import Logo from "../logohandover.png";
 import { Link } from "react-router-dom";
 
@@ -35,27 +35,27 @@ const FooterSection = () => {
 									<div className="item-social">
 										<ul>
 											<li>
-												<a href="https://www.facebook.com/" target="_blank">
+												<a href="https://www.facebook.com/" className="mx-1" target="_blank">
 													<i className="fab fa-facebook-f"></i>
 												</a>
 											</li>
 											<li>
-												<a href="https://twitter.com/" target="_blank">
+												<a href="https://twitter.com/" className="mx-1" target="_blank">
 													<i className="fab fa-twitter"></i>
 												</a>
 											</li>
 											<li>
-												<a href="https://vimeo.com/" target="_blank">
+												<a href="https://vimeo.com/" className="mx-1" target="_blank">
 													<i className="fab fa-vimeo-v"></i>
 												</a>
 											</li>
 											<li>
-												<a href="https://www.pinterest.com/" target="_blank">
+												<a href="https://www.pinterest.com/" className="mx-1" target="_blank">
 													<i className="fab fa-pinterest-p"></i>
 												</a>
 											</li>
 											<li>
-												<a href="https://web.whatsapp.com/" target="_blank">
+												<a href="https://web.whatsapp.com/" className="mx-1" target="_blank">
 													<i className="fab fa-whatsapp"></i>
 												</a>
 											</li>
@@ -73,7 +73,7 @@ const FooterSection = () => {
 											<li>
 												<Link to="/about">About Us</Link>
 											</li>
-											<li>
+											{/* <li>
 												<a>Blogs & Articles </a>
 											</li>
 											<li>
@@ -81,7 +81,7 @@ const FooterSection = () => {
 											</li>
 											<li>
 												<a>Privacy Policy </a>
-											</li>
+											</li> */}
 											<li>
 												<Link to="/contact">Contact Us</Link>
 											</li>

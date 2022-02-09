@@ -42,12 +42,12 @@ const AllListing = () => {
 		Blog18,
 	]);
 	const [data, setData] = useState([]);
+
+	const [dataPro, setDataPro] = useState([]);
 	useEffect(() => {
-		axios
-			.get(" https://handoverapi.herokuapp.com/property")
+		axios.get(" https://handoverapi.herokuapp.com/property")
 			.then(function (response) {
 				// handle success
-				console.log("hassan", response);
 				setData(response.data);
 			})
 			.catch(function (error) {
@@ -57,15 +57,11 @@ const AllListing = () => {
 			.then(function () {
 				// always executed
 			});
-	}, []);
-	const [dataPro, setDataPro] = useState([]);
-	useEffect(() => {
-		axios
-			.get("https://handoverapi.herokuapp.com/property/sort/desc")
-			.then(function (response2) {
+
+		axios.get("https://handoverapi.herokuapp.com/property/sort/desc")
+			.then(function (response) {
 				// handle success
-				console.log("data pross", response2);
-				setDataPro(response2.data);
+				setDataPro(response.data);
 			})
 			.catch(function (error) {
 				// handle error
@@ -322,7 +318,7 @@ const AllListing = () => {
 																<i className="fas fa-th"></i>
 															</a>
 														</li>
-														<li className="nav-item">
+														{/* <li className="nav-item">
 															<a
 																className="nav-link"
 																data-bs-toggle="tab"
@@ -330,7 +326,7 @@ const AllListing = () => {
 															>
 																<i className="fas fa-list-ul"></i>
 															</a>
-														</li>
+														</li> */}
 													</ul>
 												</div>
 											</div>
@@ -350,7 +346,7 @@ const AllListing = () => {
 												})}
 											</div>
 
-											<div className="pagination-style-1">
+											{/* <div className="pagination-style-1">
 												<ul className="pagination">
 													<li className="page-item">
 														<a
@@ -405,7 +401,7 @@ const AllListing = () => {
 														</a>
 													</li>
 												</ul>
-											</div>
+											</div> */}
 										</div>
 										<div className="tab-pane fade" id="reviews" role="tabpanel">
 											<div className="row">

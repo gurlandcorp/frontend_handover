@@ -23,7 +23,7 @@
 // }
 // export default App;
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useParams } from "react-router-dom";
 import Home from "./Home/Home";
 import AllListing from "./AllListing/AllListing";
 import DetailPage from "./detailPage/Index";
@@ -31,19 +31,33 @@ import Contact from './contact/Index'
 import About from './about/Index'
 import FooterSection from "./Shared/FooterSection";
 import Header from "./Shared/Header";
+import Verification from "./Verification";
 
 function App() {
+
 	return (
 		<main>
-			<Header />
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/allListing" element={<AllListing />} />
-				<Route path="/detailpage" element={<DetailPage />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/contact" element={<Contact />} />
-			</Routes>
-			<FooterSection />
+			{
+				window.location.search.search('code') == -1 ?
+				(
+					<>
+					<Header />
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/properties" element={<AllListing />} />
+						<Route path="/property/:state" element={<DetailPage />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/contact" element={<Contact />} />
+						<Route path="/user/verification" element={<Verification />} />
+					</Routes>
+					<FooterSection />
+					</>
+				) : (
+					<Routes>
+						<Route path="/user/verification" element={<Verification />} />
+					</Routes>
+				)
+			}
 		</main>
 	);
 }

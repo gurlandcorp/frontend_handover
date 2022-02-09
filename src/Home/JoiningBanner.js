@@ -49,7 +49,7 @@ const JoiningBanner = () => {
           </div>
           <div className="col-lg-4 col-md-5">
             <div className="banner-button">
-              <a href="agency-lists1.html" className="banner-btn">
+              <a href="https://app.thehandover.com" className="banner-btn">
                 Register Now
               </a>
             </div>

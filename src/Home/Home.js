@@ -11,14 +11,14 @@ import PropertyBanner from "./PropertyBanner";
 import TestimonialSection from "./TestimonialSection";
 import BlogSection from "./BlogSection";
 import JoiningBanner from "./JoiningBanner";
-import LatestListing from "./LatestListing";
+import LatestListing from "../Shared/LatestListing";
 import FooterSection from "../Shared/FooterSection";
 
 const Home = () => {
     return (
     <>
         <Banner />
-        <BrandSection />
+        {/* <BrandSection /> */}
         <AboutSection />
         {/* <PropertySection /> */}
         <LocationSection />

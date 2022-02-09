@@ -1,56 +1,36 @@
 import React, { useState, useEffect } from "react";
-import mainpro from "../assets/img/blog/product01-1.jpg";
-import theme02 from "../assets/img/theme02.png";
+// import mainpro from "../assets/img/blog/product01-1.jpg";
+// import theme02 from "../assets/img/theme02.png";
 import widget05 from "../assets/img/blog/widget05.jpg";
 import floor_plan00 from "../assets/img/figure/floor_plan00.jpg";
 import listing01 from "../assets/img/blog/listing01.jpg";
-import About13 from "../assets/img/about/about13.jpg";
-import About14 from "../assets/img/about/about14.jpg";
-import About15 from "../assets/img/about/about15.jpg";
-import { useLocation } from "react-router-dom";
+// import About13 from "../assets/img/about/about13.jpg";
+// import About14 from "../assets/img/about/about14.jpg";
+// import About15 from "../assets/img/about/about15.jpg";
+// import { useLocation } from "react-router-dom";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const MainDetail = () => {
-	const history = useNavigate();
-	const location = useLocation();
-	const propertID = location.state.propertyId;
-	const propertyIdFromLocalStorage = localStorage.getItem("propertyId");
+const MainDetail = (props) => {
+	// const history = useNavigate();
+	// const location = useLocation();
+	// const propertID = location.state.propertyId;
+	// const propertyIdFromLocalStorage = localStorage.getItem("propertyId");
 
 	const [individualPropertyData, setIndividualPropertyData] = useState({});
-	useEffect(() => {
-		axios
-			.get(
-				`https://handoverapi.herokuapp.com/property/${
-					typeof (propertID || propertyIdFromLocalStorage) !== "undefined" &&
-					propertID
-						? propertID._id
-						: propertyIdFromLocalStorage
-				}`
-			)
-			.then(function (response0) {
-				// handle success
-				setIndividualPropertyData(response0.data);
-			})
-			.catch(function (error) {
-				// handle error
-				console.log(error);
-			})
-			.then(function () {
-				// always executed
-			});
-	}, []);
+
 	// ...............Contact us fom start...................
 	const initialSate = { bid: "" };
 	const [data, setData] = useState(initialSate);
-	var sellerId = JSON.parse(localStorage.getItem("userData"))._id;
-	var propertyId = individualPropertyData._id;
+	var propertyId = props.id;
 
 	const handleInputs = async (e) => {
 		setData({ ...data, [e.target.name]: e.target.value });
 	};
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+		
+		var sellerId = JSON.parse(localStorage.getItem("userData"))._id;
 		const { bid } = data;
 		var myHeaders = new Headers();
 		myHeaders.append(
@@ -70,7 +50,7 @@ const MainDetail = () => {
 		await fetch("https://handoverapi.herokuapp.com/bidding/bid", requestOptions)
 			.then((response) => {
 				response.text();
-				console.log("place a bid nowwwwww", response);
+				console.log("place a Bid nowwwwww", response);
 			})
 			.then((result) => console.log(result))
 			.catch((error) => console.log("error", error));
@@ -80,11 +60,23 @@ const MainDetail = () => {
 	// belw property from contactus form......start
 	const [dataPro, setDataPro] = useState([]);
 	useEffect(() => {
-		axios
-			.get("https://handoverapi.herokuapp.com/property/sort/desc")
+		
+			axios.get(`https://handoverapi.herokuapp.com/property/${typeof (props.id) !== "undefined" && props.id}`)
+			.then(function (response) {
+				// handle success
+				setIndividualPropertyData(response.data);
+			})
+			.catch(function (error) {
+				// handle error
+				console.log(error);
+			})
+			.then(function () {
+				// always executed
+			});
+
+			axios.get("https://handoverapi.herokuapp.com/property/sort/desc")
 			.then(function (response2) {
 				// handle success
-				console.log("data pross", response2);
 				setDataPro(response2.data);
 			})
 			.catch(function (error) {
@@ -94,7 +86,7 @@ const MainDetail = () => {
 			.then(function () {
 				// always executed
 			});
-	}, []);
+	}, [props.id]);
 	return (
 		<section class="single-listing-wrap1">
 			<div class="container">
@@ -180,16 +172,23 @@ const MainDetail = () => {
 										<div class="swiper-wrapper">
 											<div class="swiper-slide">
 												<div class="feature-img1 zoom-image-hover">
-													<img
-														src={propertID.images[0]}
-														alt="feature"
-														style={{
-															widht: "798px",
-															height: "420px",
-															minWidth: "798px",
-															minHeight: "420px",
-														}}
-													/>
+													{
+														individualPropertyData!=undefined && individualPropertyData!='' && individualPropertyData.images != undefined ?
+														(
+															<img
+																src={individualPropertyData.images[0]}
+																alt="feature"
+																style={{
+																	widht: "798px",
+																	height: "420px",
+																	minWidth: "798px",
+																	minHeight: "420px",
+																}}
+															/>
+														) : (
+															''
+														)
+													}
 												</div>
 											</div>
 											<div class="swiper-slide">
@@ -494,7 +493,7 @@ const MainDetail = () => {
 												width="731"
 												height="349"
 												style={{ border: "0" }}
-												allowfullscreen=""
+												allowFullScreen=""
 												loading="lazy"
 											></iframe>
 										</div>
@@ -928,7 +927,7 @@ const MainDetail = () => {
 							</div>
 							<div class="col-lg-4 widget-break-lg sidebar-widget">
 								<div class="widget widget-contact-box">
-									<h3 class="widget-subtitle">Place a bid</h3>
+									<h3 class="widget-subtitle">Place a Bid</h3>
 									{/* <div class="media d-flex">
 										<div class="flex-shrink-0">
 											<div class="item-logo">
@@ -1041,20 +1040,13 @@ const MainDetail = () => {
 								<div class="widget widget-listing-box1">
 									<h3 class="widget-subtitle">Latest Listing</h3>
 									<div class="item-img">
-										<a
-											// href="single-listings2.html"
-											onClick={() => {
-												history("/detailpage", {
-													state: { propertyId: dataPro[0] },
-												});
-											}}
-										>
+										<Link to={'/property/'+dataPro[0]?._id} >
 											<img
 												src={dataPro[0]?.images[0]}
 												style={{ width: "540px", height: "360px" }}
 												alt="widget"
 											/>
-										</a>
+										</Link>
 										<div class="item-category-box1">
 											<div class="item-category">For Rent</div>
 										</div>

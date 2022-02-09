@@ -1,8 +1,8 @@
 import Logo from "../logohandover.png";
 import SearchSection from "./SearchSection";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 const Header = () => {
-	const history = useNavigate();
+	// const history = useNavigate();
 	return (
 		<>
 			<header className="header position-relative">
@@ -35,68 +35,62 @@ const Header = () => {
 								>
 									<ul>
 										<li>
-											<Link to={'/'}
-												className="active"
-											>
+											<NavLink to={'/'} >
 												Home
-											</Link>
+											</NavLink>
 											{/* <ul className="dropdown-menu-col-1">
-                        <li>
-                          <a href="index.html">Home Page 1</a>
-                        </li>
-                        <li>
-                          <a href="index2.html">Home Page 2</a>
-                        </li>
-                        <li>
-                          <a href="index3.html">Home Page 3</a>
-                        </li>
-                        <li>
-                          <a href="index4.html">Home Page 4</a>
-                        </li>
-                        <li>
-                          <a href="index5.html">Home Page 5</a>
-                        </li>
-                      </ul> */}
+												<li>
+												<a href="index.html">Home Page 1</a>
+												</li>
+												<li>
+												<a href="index2.html">Home Page 2</a>
+												</li>
+												<li>
+												<a href="index3.html">Home Page 3</a>
+												</li>
+												<li>
+												<a href="index4.html">Home Page 4</a>
+												</li>
+												<li>
+												<a href="index5.html">Home Page 5</a>
+												</li>
+											</ul> */}
 										</li>
 										<li>
-											<Link to={'/about'}
-											>
-												About
-											</Link>
+											<NavLink to={'/about'}
+											> About </NavLink>
 										</li>
 										<li>
-											<Link to={'/allListing'}
-											>
-												All Property
-											</Link>
+											<NavLink to={'/properties'}
+											> All Property </NavLink>
 											{/* <ul className="dropdown-menu-col-1">
-                        <li>
-                          <a href="half-map1.html">Properties Map Grid</a>
-                        </li>
-                        <li>
-                          <a href="half-map2.html">Properties Map List</a>
-                        </li>
-                        <li>
-                          <a href="with-sidebar.html">Properties Grid</a>
-                        </li>
-                        <li>
-                          <a href="with-sidebar2.html">Properties List</a>
-                        </li>
-                        <li>
-                          <a href="without-sidebar.html">
-                            Properties Full Width
-                          </a>
-                        </li>
-                        <li>
-                          <a href="single-listing1.html">Single Property 1</a>
-                        </li>
-                        <li>
-                          <a href="single-listing2.html">Single Property 2</a>
-                        </li>
-                        <li>
-                          <a href="single-listing3.html">Single Property 3</a>
-                        </li>
-                      </ul> */}
+												<li>
+												<a href="half-map1.html">Properties Map Grid</a>
+												</li>
+												<li>
+												<a href="half-map2.html">Properties Map List</a>
+												</li>
+												<li>
+												<a href="with-sidebar.html">Properties Grid</a>
+												</li>
+												<li>
+												<a href="with-sidebar2.html">Properties List</a>
+												</li>
+												<li>
+												<a href="without-sidebar.html">
+													Properties Full Width
+												</a>
+												</li>
+												<li>
+												<a href="single-listing1.html">Single Property 1</a>
+												</li>
+												<li>
+												<a href="single-listing2.html">Single Property 2</a>
+												</li>
+												<li>
+												<a href="single-listing3.html">Single Property 3</a>
+												</li>
+											</ul> */}
 										</li>
 										{/* <li>
 											<a href="agent-lists1.html">Agents</a>
@@ -232,10 +226,10 @@ const Header = () => {
 											</ul>
 										</li>
 										<li>
-											<Link to={'/contact'}
+											<NavLink to={'/contact'}
 											>
 												Contact
-											</Link>
+											</NavLink>
 										</li>
 									</ul>
 								</nav>
@@ -244,43 +238,40 @@ const Header = () => {
 								<div className="header-action-layout1">
 									<ul className="action-list">
 										<li className="action-item-style left-right-btn">
-											<a
-												href="compare.html"
+											<Link to={'/'}
 												data-bs-toggle="tooltip"
 												data-bs-placement="bottom"
 												title="Compare"
 											>
 												<i className="flaticon-left-and-right-arrows icon-round"></i>
 												<div className="item-count">0</div>
-											</a>
+											</Link>
 										</li>
 										<li className="action-item-style wish-btn">
-											<a
-												href="favourite.html"
+											<Link to={'/'}
 												data-bs-toggle="tooltip"
 												data-bs-placement="bottom"
 												title="Favourites"
 											>
 												<i className="flaticon-heart icon-round"></i>
 												<div className="item-count">0</div>
-											</a>
+											</Link>
 										</li>
 										<li className="action-item-style my-account">
-											<a
-												href="account.html"
+											<Link to={'/'}
 												data-bs-toggle="tooltip"
 												data-bs-placement="bottom"
 												title="Sign In"
 											>
 												<i className="flaticon-user-1 icon-round"></i>
-											</a>
+											</Link>
 										</li>
 										<li className="listing-button">
-											<a href="post-add.html" className="listing-btn">
+											<a href={'https://app.thehandover.com'} className="listing-btn">
 												<span>
-													<i className="fas fa-plus-circle"></i>
+													<i className="fas fa-plus"></i>
 												</span>
-												<span className="item-text">Add Property</span>
+												<span className="item-text">Sign In</span>
 											</a>
 										</li>
 									</ul>

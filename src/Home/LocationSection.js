@@ -48,7 +48,7 @@ const LocationSection = () => {
                       <div className="item-category">02 properties</div>
                       <div className="item-title">
                         <h3>
-                          <a href="single-listing2">Melbourne</a>
+                          <a href="single-listing2">Umm al-Quwain</a>
                         </h3>
                       </div>
                     </div>
@@ -77,7 +77,7 @@ const LocationSection = () => {
                       <div className="item-category">02 properties</div>
                       <div className="item-title">
                         <h3>
-                          <a href="single-listing2">Kansas</a>
+                          <a href="single-listing2">Fujairah</a>
                         </h3>
                       </div>
                     </div>
@@ -108,7 +108,7 @@ const LocationSection = () => {
                   <div className="item-category">02 properties</div>
                   <div className="item-title">
                     <h3>
-                      <a href="single-listing2">San Francisco</a>
+                      <a href="single-listing2">Dubai</a>
                     </h3>
                   </div>
                 </div>
@@ -137,7 +137,7 @@ const LocationSection = () => {
                   <div className="item-category">02 properties</div>
                   <div className="item-title">
                     <h3>
-                      <a href="single-listing2">Albania</a>
+                      <a href="single-listing2">Abu Dhabi</a>
                     </h3>
                   </div>
                 </div>
@@ -168,7 +168,7 @@ const LocationSection = () => {
                       <div className="item-category">02 properties</div>
                       <div className="item-title">
                         <h3>
-                          <a href="single-listing2">New York</a>
+                          <a href="single-listing2">Ajman</a>
                         </h3>
                       </div>
                     </div>
@@ -197,7 +197,7 @@ const LocationSection = () => {
                       <div className="item-category">02 properties</div>
                       <div className="item-title">
                         <h3>
-                          <a href="single-listing2">Kansas</a>
+                          <a href="single-listing2">Sharjah</a>
                         </h3>
                       </div>
                     </div>

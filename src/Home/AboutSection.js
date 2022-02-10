@@ -37,15 +37,7 @@ const AboutSection = () => {
                 </div>
               </div>
               <p>
-                Building when an unknown printer took a galley of type and scram
-                bled it to make a type specimen book. It has survived not only
-                five centuries, but also the leape.
-              </p>
-              <p>
-                when an unknown printer took a galley of type andetry scram bled
-                it to make a type specimen bookhas survived not only
-                centuriesalwith the release of Letraset sheets containing Lorem
-                Ipsum passages, and more recently.
+              Others get indignant when asked for assistance, but we are delighted to help you! HandOver's dedicated resources are on hand to counsel you through every step till you sign the best investment deal. If you need any assistance, you can reach us via phone, email, or live chat. Our customer support team is 24/7 available at your service.
               </p>
               <div className="about-button">
                 <Link to={'/contact'} className="item-btn">

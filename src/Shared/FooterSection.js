@@ -28,9 +28,7 @@ const FooterSection = () => {
 										/>
 									</div>
 									<p>
-										Corem ipsum dolor sit amet consecte turad pisicing elit, sed
-										do eiusmod tempor inci didunt ut labore et dolor.pisicing
-										elit, sed do eiusmod tempor inci
+									We take pride in bridging the gap between investors and top real estate developers to discover their best property offers online.
 									</p>
 									<div className="item-social">
 										<ul>

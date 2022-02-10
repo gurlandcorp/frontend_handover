@@ -1,8 +1,14 @@
 import Logo from "../logohandover.png";
 import SearchSection from "./SearchSection";
 import { Link, NavLink } from "react-router-dom";
+import { useEffect } from "react";
+
 const Header = () => {
-	// const history = useNavigate();
+
+	useEffect(()=>{
+		
+	},[])
+
 	return (
 		<>
 			<header className="header position-relative">
@@ -258,20 +264,20 @@ const Header = () => {
 											</Link>
 										</li>
 										<li className="action-item-style my-account">
-											<Link to={'/'}
+											<a href={'https://app.thehandover.com'}
 												data-bs-toggle="tooltip"
 												data-bs-placement="bottom"
 												title="Sign In"
 											>
 												<i className="flaticon-user-1 icon-round"></i>
-											</Link>
+											</a>
 										</li>
 										<li className="listing-button">
 											<a href={'https://app.thehandover.com'} className="listing-btn">
 												<span>
-													<i className="fas fa-plus"></i>
+													<i className="fas fa-plus-circle"></i>
 												</span>
-												<span className="item-text">Sign In</span>
+												<span className="item-text">Add Property</span>
 											</a>
 										</li>
 									</ul>

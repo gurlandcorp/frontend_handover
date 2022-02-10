@@ -39,10 +39,9 @@ const JoiningBanner = () => {
                 </div>
               </div>
               <div className="item-content">
-                <h2 className="heading-title">Become a Real Estate Seller</h2>
+                <h2 className="heading-title">Register as a Real Estate Developer</h2>
                 <p>
-                  We only work with the best companies around the globe to
-                  survey
+                Be the part of the Top Off Plan Real Estate Development Marketplace
                 </p>
               </div>
             </div>
@@ -50,7 +49,7 @@ const JoiningBanner = () => {
           <div className="col-lg-4 col-md-5">
             <div className="banner-button">
               <a href="https://app.thehandover.com" className="banner-btn">
-                Register Now
+              Post a Property
               </a>
             </div>
           </div>

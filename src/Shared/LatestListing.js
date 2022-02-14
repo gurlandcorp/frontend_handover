@@ -65,6 +65,7 @@ const LatestListing = () => {
                                 data-bs-toggle="tooltip"
                                 data-bs-placement="top"
                                 title="Favourites"
+                                className="mx-1"
                             >
                                 <i className="flaticon-heart"></i>
                             </Link>
